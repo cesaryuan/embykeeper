@@ -225,9 +225,9 @@ async def monitorer(config: dict):
     async with ClientsSession.from_config(config, monitor=True) as clients:
         async for tg in clients:
             log = logger.bind(scheme="telemonitor", username=tg.me.name)
-            if not await Link(tg).auth("monitorer"):
-                log.error(f"功能初始化失败: 权限校验不通过.")
-                continue
+            # if not await Link(tg).auth("monitorer"):
+            #     log.error(f"功能初始化失败: 权限校验不通过.")
+            #     continue
             clses = extract(get_cls("monitor", names=config.get("service", {}).get("monitor", None)))
             names = []
             for cls in clses:
