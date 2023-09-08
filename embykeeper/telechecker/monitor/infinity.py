@@ -10,7 +10,7 @@ class InfinityMonitor(Monitor):
     # chat_keyword = r"RJU1PGzlBXvQCjX1dFBys"
     bot_username = "Infinity94bot"
     # chat_name = "-965261929"
-    chat_name = "infinityflyemby"
+    chat_name = "-1001590509501"
     notify_create_name = True
     allow_edit = False
 
